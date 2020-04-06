@@ -112,8 +112,8 @@ class Plugin:
         # except:
         #     return 0
         # finally:
-        OnEnable.call(self.path)
         self.module.getServer(server)
+        OnEnable.call(self.path)
         return self
 
     def unload(self):
